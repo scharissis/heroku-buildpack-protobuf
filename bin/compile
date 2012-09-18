@@ -52,4 +52,5 @@ fi
 curl -sfSo $CACHED_PROTOBUF_TARBALL \
     "${MD5_HEADER[@]}" $PROTOBUF_TARBALL_URL
 
+log "installing protobuf into $VENDOR_DIR"
 tar xzf $CACHED_PROTOBUF_TARBALL -C $VENDOR_DIR
