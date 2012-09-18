@@ -58,3 +58,5 @@ tar xzf $CACHED_PROTOBUF_TARBALL -C $VENDOR_DIR
 #log "updating PATH..."
 export PATH=$PATH:$VENDOR_DIR/bin
 log "PATH should be updated: $PATH"
+log "$VENDOR_DIR/bin contains:"	# Debug
+ls $VENDOR_DIR/bin	# Debug
