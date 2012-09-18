@@ -56,7 +56,7 @@ curl -sfSo $CACHED_PROTOBUF_TARBALL \
 tar xzf $CACHED_PROTOBUF_TARBALL -C $VENDOR_DIR
 
 #log "updating PATH..."
-export PATH=$PATH:$VENDOR_DIR/bin
+PATH=$PATH:$VENDOR_DIR/bin:/app/.heroku/vendor/bin export PATH
 log "PATH should be updated: $PATH"
 log "$VENDOR_DIR/bin contains:"	# Debug
 ls $VENDOR_DIR/bin	# Debug
